@@ -12,9 +12,12 @@ namespace CounterNameSpace
   {
   }
 
-public static string CountDraculaLoop(string sentence)
+public static string CountDraculaLoop(string word)
 {
-  return sentence;
+
+  // string sentence1 = sentence;
+  // string word1 = word;
+  return word;
 }
 }
 }
