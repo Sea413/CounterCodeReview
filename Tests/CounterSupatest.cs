@@ -42,9 +42,17 @@ namespace  CounterNameSpace
     {
       string sentence = "What a piece of work is a man! How noble in reason! how infinite in faculty! in form, in moving, how express and admirable! in action how like an angel! in apprehension how like a god! the beauty of the world! the paragon of animals! And yet, to me, what is this quintessence of dust?";
       string word = "like";
-      // string word = "Donnybrook";
 
       Assert.Equal (2, WordCounter.CountDraculaLoop(sentence,word));
+    }
+    [Fact]
+    public void Sensitivitytesting_CountDraculaloop_sentence()
+    {
+      string sentence = "Achilles glared at him and answered,Fool, prate not to me about covenants. There can be no covenants between men and lions, wolves and lambs can never be of one mind, but hate each other out and out an through. Therefore there can be no understanding between you and me, nor may there be any covenants between us, till one or other shall fall";
+
+      string word = "CAN";
+
+      Assert.Equal (3, WordCounter.CountDraculaLoop(sentence,word));
     }
     }
   }
