@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace CounterNameSpace
 {
@@ -12,15 +13,12 @@ namespace CounterNameSpace
   {
   }
 
-public static string CountDraculaLoop(string sentence)
-{
+  public static int CountDraculaLoop(string sentence, string word) {
 
-  // string sentence1 = sentence;
-  // string word1 = word;
 
-  List<string> result = sentence.Split(',').ToList();
-  string newresult = string.Join(",", result.ToArray());
-  return newresult;
-}
+      int count = (text.Length - text.Replace(word, "").Length) / word.Length;
+      return count;
+
+  }
 }
 }
