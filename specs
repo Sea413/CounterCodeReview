@@ -1,4 +1,0 @@
-1.) USer will input a string of a given word.
-2.)The program will take the string and convert it into an array of characters.
-3.) The array of characters will be reassigned an integer value.
-4. ) The combined integer value will be returned. 
