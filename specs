@@ -8,9 +8,14 @@ Test 2
 2.) The second string will be displayed alongside the first.
 
 Test 3
+
+1.) User will add a string which will be uploaded into a list.
+2.) Should display string as a list.
+
+Test 3
 1.) The user will be provided an option to confirm their selection.
 2.) The confirmation method will ensure that only a proper string is provided. Numbers and special characters are expected to fail.
 
 Test 4
 1.) The prior inputs will be received by the system.
-2.) The second input will loop through the first counting the number of times it has been found. 
+2.) The second input will loop through the first counting the number of times it has been found.

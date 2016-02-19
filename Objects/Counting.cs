@@ -12,12 +12,15 @@ namespace CounterNameSpace
   {
   }
 
-public static string CountDraculaLoop(string word)
+public static string CountDraculaLoop(string sentence)
 {
 
   // string sentence1 = sentence;
   // string word1 = word;
-  return word;
+
+  List<string> result = sentence.Split(',').ToList();
+  string newresult = string.Join(",", result.ToArray());
+  return newresult;
 }
 }
 }

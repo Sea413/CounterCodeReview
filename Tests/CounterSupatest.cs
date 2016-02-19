@@ -22,5 +22,13 @@ namespace  CounterNameSpace
 
       Assert.Equal ("Donnybrook", WordCounter.CountDraculaLoop(word));
     }
+    [Fact]
+    public void TestforList_CountDraculaloop_List()
+    {
+      string sentence = "Never Give up on your dreams!";
+      // string word = "Donnybrook";
+
+      Assert.Equal ("Never Give up on your dreams!", WordCounter.CountDraculaLoop(sentence));
+    }
     }
   }
