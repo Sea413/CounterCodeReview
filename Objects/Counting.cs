@@ -27,10 +27,10 @@ namespace CounterNameSpace
 // }
 
   public static int CountDraculaLoop(string sentence, string word) {
-    //
-    // _sentence = sentence;
-    // _word = word;
-      int count = (sentence.Length - sentence.Replace(word, "").Length) / word.Length;
+
+      string sentencelower = sentence.ToLowerCase();
+      string wordlower = word.ToLowerCase;
+      int count = (sentencelower.Length - sentencelower.Replace(wordlower, "").Length) / wordlower.Length;
       return count;
 
   }

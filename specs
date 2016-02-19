@@ -26,3 +26,8 @@ Test 3
 Test 4
 1.) The prior inputs will be received by the system. This step is essential because it represents the desired out put of the user.
 2.) The second input will loop through the first counting the number of times it has been found.
+
+Test 5
+(New Spec Introduction)
+1.) A feature request has been created so have the words no longer be case sensitive. Some changes to the code were implemented.
+2. ) Expected result is that the code will no longer be case sensitive.
