@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello Friend!</title>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <title>Word Counting is Fun</title>
   </head>
   <body>
-    <h1>THIS IS A TEMPLATE</h1>
+    <h1>Enter a word and a sentence to see how often the word is used!</h1>
+
+    <form action="/results" method="post">
+      <label for="sentence-id">Input your sentence!</label>
+      <input type="Text" name="sentence-id" value="">
+      <label for="word-id">Input the word you would like counted!</label>
+      <input type="Text" name="word-id" value="">
+      <button type="submit" name="button">Begin the Journey</button>
+
+    </form>
   </body>
 </html>
