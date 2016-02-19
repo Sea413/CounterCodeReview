@@ -13,10 +13,24 @@ namespace CounterNameSpace
   {
   }
 
+  public static string GetSentence(string sentence)
+  {
+    return sentence;
+  }
+  public static string GetWord(string word)
+  {
+    return word;
+  }
+//   public void SetName(string sentence)
+// {
+//   _sentence = sentence;
+// }
+
   public static int CountDraculaLoop(string sentence, string word) {
-
-
-      int count = (text.Length - text.Replace(word, "").Length) / word.Length;
+    //
+    // _sentence = sentence;
+    // _word = word;
+      int count = (sentence.Length - sentence.Replace(word, "").Length) / word.Length;
       return count;
 
   }

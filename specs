@@ -12,10 +12,17 @@ Test 3
 1.) User will add a string which will be uploaded into a list.
 2.) Should display string as a list.
 
+(I have found a better approach to resolve the issue not needing this step of the process. Instead of ommiting the spec I have elected to leave it to show revisions have occurred.)
+
+New Spec 3
+1.) User will provide a string input. Since the length of the sentence will be used to determine the repeat amount it will be used hear for testing.
+2.) The length of this string will be provided.
+
 Test 3
-1.) The user will be provided an option to confirm their selection.
+1.) The user will be provided an option to confirm their selection. That will occur in nancy but can be simulated here.
 2.) The confirmation method will ensure that only a proper string is provided. Numbers and special characters are expected to fail.
+(Assert.Fail did not appear to be an option so this spec was no longer included within the test file.)
 
 Test 4
-1.) The prior inputs will be received by the system.
+1.) The prior inputs will be received by the system. This step is essential because it represents the desired out put of the user.
 2.) The second input will loop through the first counting the number of times it has been found.
