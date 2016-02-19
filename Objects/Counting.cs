@@ -26,7 +26,7 @@ namespace CounterNameSpace
 //   _sentence = sentence;
 // }
 
-  public static int CountDraculaLoop(string sentence, string word) {
+  public static int CountRepeats(string sentence, string word) {
 
       string sentencelower = sentence.ToLower();
       string wordlower = word.ToLower();

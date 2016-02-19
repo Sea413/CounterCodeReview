@@ -13,7 +13,7 @@ namespace CounterNameSpace
       };
 
       Post ["/results"]= _ => {
-         var newWordCounter = WordCounter.CountDraculaLoop(Request.Form["sentence-id"], Request.Form["word-id"]);
+         var newWordCounter = WordCounter.CountRepeats(Request.Form["sentence-id"], Request.Form["word-id"]);
          return View ["results.cshtml", newWordCounter];
       };
     }
