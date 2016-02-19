@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using Xunit;
-using WeekDaynamespace;
+using CounterNameSpace;
 
 
 namespace  CounterNameSpace
@@ -10,7 +10,7 @@ namespace  CounterNameSpace
     [Fact]
     public void TestforSentence_CountDracula_sentence()
     {
-      string sentence = "I have been expecting this test, Mr.Bond"
+      string sentence = "I have been expecting this test, Mr.Bond";
 
       Assert.Equal ("I have been expecting this test, Mr.Bond", WordCounter.CountDraculaLoop(sentence));
     }
