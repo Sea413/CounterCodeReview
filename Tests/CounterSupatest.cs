@@ -37,14 +37,14 @@ namespace  CounterNameSpace
     //
     //   Assert.Equal ("-1", WordCounter.CountDraculaLoop(sentence));
     // }
-    // [Fact]
-    // public void PreliminaryCountingTests_CountDraculaloop_Counting()
-    // {
-    //   string sentence = "What a piece of work is a man! How noble in reason! how infinite in faculty! in form, in moving, how express and admirable! in action how like an angel! in apprehension how like a god! the beauty of the world! the paragon of animals! And yet, to me, what is this quintessence of dust?";
-    //   string word = "like";
-    //   // string word = "Donnybrook";
-    //
-    //   Assert.Equal (2, WordCounter.CountDraculaLoop(sentence,word));
-    // }
+    [Fact]
+    public void PreliminaryCountingTests_CountDraculaloop_Counting()
+    {
+      string sentence = "What a piece of work is a man! How noble in reason! how infinite in faculty! in form, in moving, how express and admirable! in action how like an angel! in apprehension how like a god! the beauty of the world! the paragon of animals! And yet, to me, what is this quintessence of dust?";
+      string word = "like";
+      // string word = "Donnybrook";
+
+      Assert.Equal (2, WordCounter.CountDraculaLoop(sentence,word));
+    }
     }
   }
