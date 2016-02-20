@@ -30,7 +30,10 @@ namespace CounterNameSpace
 
       string sentencelower = sentence.ToLower();
       string wordlower = word.ToLower();
-      int count = (sentencelower.Length - sentencelower.Replace(wordlower, "").Length) / wordlower.Length;
+      string pattern = @"\b" + wordlower + @"\b";
+      string replacement = "";
+      string result = Regex.Replace(sentencelower, pattern, replacement);
+      int count = (sentencelower.Length - result.Length) / wordlower.Length;
       return count;
 
   }

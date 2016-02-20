@@ -54,5 +54,16 @@ namespace  CounterNameSpace
 
       Assert.Equal (3, WordCounter.CountRepeats(sentence,word));
     }
+    [Fact]
+    public void Regextesting_CountRepeats_sentence()
+    {
+    {
+      string sentence = "Achilles glared at him and answered,Fool, prate not to me about covenants. There can be no covenants between men and lions, wolves and lambs can never be of one mind, but hate each other out and out an through. Therefore there can be no understanding between you and me, nor may there be any covenants between us, till one or other shall fall";
+
+      string word = "cove";
+
+      Assert.Equal (0, WordCounter.CountRepeats(sentence,word));
+    }
     }
   }
+}
