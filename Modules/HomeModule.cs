@@ -8,14 +8,13 @@ namespace CounterNameSpace
   {
     public HomeModule()
     {
-      Get["/"] = _ => {
-          return View["index.cshtml"];
-      };
-
-      Post ["/results"]= _ => {
-         var newWordCounter = WordCounter.CountRepeats(Request.Form["sentence-id"], Request.Form["word-id"]);
-         return View ["results.cshtml", newWordCounter];
-      };
+    Get["/"] = _ => {
+     return View["index.cshtml"];
+    };
+    Post ["/results"]= _ => {
+     var newWordCounter = WordCounter.CountRepeats(Request.Form["sentence-id"], Request.Form["word-id"]);
+     return View ["results.cshtml", newWordCounter];
+    };
     }
   }
 }

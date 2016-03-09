@@ -6,9 +6,8 @@ using System.Text.RegularExpressions;
 namespace CounterNameSpace
 {
 
-    public class WordCounter
+ public class WordCounter
   {
-
   public WordCounter()
   {
   }
@@ -17,25 +16,21 @@ namespace CounterNameSpace
   {
     return sentence;
   }
+
   public static string GetWord(string word)
   {
     return word;
   }
-//   public void SetName(string sentence)
-// {
-//   _sentence = sentence;
-// }
 
-  public static int CountRepeats(string sentence, string word) {
-
-      string sentencelower = sentence.ToLower();
-      string wordlower = word.ToLower();
-      string pattern = @"\b" + wordlower + @"\b";
-      string replacement = "";
-      string result = Regex.Replace(sentencelower, pattern, replacement);
-      int count = (sentencelower.Length - result.Length) / wordlower.Length;
-      return count;
-
+  public static int CountRepeats(string sentence, string word)
+  {
+  string sentencelower = sentence.ToLower();
+  string wordlower = word.ToLower();
+  string pattern = @"\b" + wordlower + @"\b";
+  string replacement = "";
+  string result = Regex.Replace(sentencelower, pattern, replacement);
+  int count = (sentencelower.Length - result.Length) / wordlower.Length;
+  return count;
   }
 }
 }
